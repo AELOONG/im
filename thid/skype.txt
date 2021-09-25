@@ -1,0 +1,42 @@
+skype http发送body
+
+{"messagetype":"Control/Typing","contenttype":"Application/Message","composetime":"2021-08-30T07:52:35.448Z","content":"","properties":{}}
+
+表情
+{"clientmessageid":"13364702862406506200","composetime":"2021-08-30T07:52:37.593Z","content":"<ss type=\"hi\">(wave)</ss>","messagetype":"RichText","contenttype":"text","imdisplayname":"titan wu","receiverdisplayname":"wu eloong"}
+
+语音
+{
+	"clientmessageid": "15074201291051778564",
+	"composetime": "2021-08-30T08:13:36.902Z",
+	"content": "<URIObject uri=\"https://api.asm.skype.com/v1/objects/0-sa-d6-1dcd3813658d458d829183472f8cc14d\" url_thumbnail=\"https://api.asm.skype.com/v1/objects/0-sa-d6-1dcd3813658d458d829183472f8cc14d/views/audio\" type=\"Audio.1/Message.1\" doc_id=\"0-sa-d6-1dcd3813658d458d829183472f8cc14d\" duration_ms=\"2202\">要收听此音频消息，请转到: <a href=\"https://login.skype.com/login/sso?go=xmmfallback?am=0-sa-d6-1dcd3813658d458d829183472f8cc14d\">https://login.skype.com/login/sso?go=xmmfallback?am=0-sa-d6-1dcd3813658d458d829183472f8cc14d</a><OriginalName v=\"2-audioMessage.mp3\"></OriginalName><FileSize v=\"18936\"></FileSize></URIObject>",
+	"messagetype": "RichText/Media_AudioMsg",
+	"contenttype": "text",
+	"imdisplayname": "titan wu",
+	"receiverdisplayname": "wu eloong",
+	"amsreferences": ["0-sa-d6-1dcd3813658d458d829183472f8cc14d"]
+}
+
+文件
+{
+	"clientmessageid": "1235770176432836777",
+	"composetime": "2021-08-30T08:17:00.546Z",
+	"content": "<URIObject uri=\"https://api.asm.skype.com/v1/objects/0-sa-d6-720c1974cfffac2fff2efc25cec22761\" url_thumbnail=\"https://api.asm.skype.com/v1/objects/0-sa-d6-720c1974cfffac2fff2efc25cec22761/views/original\" type=\"File.1\" doc_id=\"0-sa-d6-720c1974cfffac2fff2efc25cec22761\">要查看此文件，请转到: <a href=\"https://login.skype.com/login/sso?go=webclient.xmm&amp;docid=0-sa-d6-720c1974cfffac2fff2efc25cec22761\">https://login.skype.com/login/sso?go=webclient.xmm&amp;docid=0-sa-d6-720c1974cfffac2fff2efc25cec22761</a><OriginalName v=\"7.txt\"></OriginalName><FileSize v=\"42\"></FileSize></URIObject>",
+	"messagetype": "RichText/Media_GenericFile",
+	"contenttype": "text",
+	"imdisplayname": "titan wu",
+	"receiverdisplayname": "wu eloong",
+	"amsreferences": ["0-sa-d6-720c1974cfffac2fff2efc25cec22761"]
+}
+
+通话
+{
+    "clientmessageid":"13461198441444819980",
+    "composetime":"2021-08-30T08:26:48.143Z",
+    "content":"<partlist type=\"started\" alt=\"\" callId=\"bfec847a-7590-42dd-8fb5-10928cc252cf\"><part identity=\"live:.cid.274288ea58b9432b\"><name>titan wu</name></part><part identity=\"live:.cid.a614b8b05ec7147a\"><name>wu eloong</name></part></partlist>",
+    "messagetype":"Event/Call",
+    "contenttype":"text",
+    "imdisplayname":"titan wu",
+    "receiverdisplayname":"wu eloong",
+    "skypeguid":"bfec847a-7590-42dd-8fb5-10928cc252cf"
+}

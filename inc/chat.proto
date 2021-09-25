@@ -1,0 +1,54 @@
+syntax = "proto3";
+
+message imMessage {
+    //消息类型
+    required string messagetype = 1;
+    //消息组成时间
+    required string composetime = 2;
+
+    enum Properties {
+        kServer = 0;
+        kServerTransfer = 1;
+        kClient = 2;
+    };
+    //发送者属性，完全为服务器消息，服务器中转或客户端P2P
+    optional int32 fromProperties = 3;
+
+    
+    enum contentType {
+        kText=0;
+        kRichText=1;
+        kPicture=2;
+        kVoice=3;
+        kFile=4;
+    };
+    //内容类型 
+    optional string contenttype=4;
+    optional string content=5;
+
+    //p2p直连下文件校验
+    optional string check=6;
+    optional string properties=7;
+
+    enum Application {
+        kAndroid=0;
+        kIos=1;
+        kUnix=2;
+        kWindows=3;
+        kMacOs=4;
+        kWeb=5;
+    };
+    //发送端 系统类型
+    optional int32 fromUA=8;
+
+
+    //用户id
+    optional string fromUid=9;
+
+    //用于校验接收者id
+    optional string targetUid=10;
+
+    //用于历史消息
+    optional string beginTime=11;
+    optional string endTime=12;
+}
